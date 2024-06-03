@@ -68,7 +68,7 @@ mkdir src
 ```
 
 - Implement SLAM using `slam_toolbox`:
-- Example: src/slam/slam_node.py
+- Example: 'src/slam/slam/slam_node.py'
 
 
 2. **Path Planning with Nav2:**
@@ -82,7 +82,7 @@ cd navigation/navigation
 mkdir src
 ```
 - Implement path planning using Nav2.
-- Example: 'src/navigation/navigation_node.py'
+- Example: 'src/navigation/navigation/navigation_node.py'
 
 
 1. **Obstacle Avoidance:**
@@ -95,10 +95,14 @@ mkdir -p obstacle_avoidance/src
 ```
 
 - Implement obstacle avoidance using sensor data:
-- Example: 'src/obstacle_avoidance/obstacle_avoidance_node.py'
+- Example: 'src/obstacle_avoidance/obstacle_avoidance/obstacle_avoidance_node.py'
 
 4. **Launch Files:**
 
 - Create launch files for each component in the launch directory.
 - Example: 'launch/navigation_launch.py'
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details
+
 
