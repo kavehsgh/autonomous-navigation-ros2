@@ -20,8 +20,8 @@ Install ROS2 Humble and Nav2:
 
 ```bash
 sudo apt update
-sudo apt install ros-noetic-desktop-full
-sudo apt install ros-noetic-navigation ros-noetic-slam-gmapping ros-noetic-move-base
+sudo apt install ros-humble-desktop
+sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
 ```
 
 Build the workspace:
@@ -68,7 +68,7 @@ mkdir src
 ```
 
 - Implement SLAM using `slam_toolbox`:
-Example: src/slam/slam_node.py
+- Example: src/slam/slam_node.py
 
 
 2. **Path Planning with Nav2:**
@@ -81,11 +81,11 @@ ros2 pkg create --build-type ament_python navigation
 cd navigation/navigation
 mkdir src
 ```
-Implement path planning using Nav2.
-Example: 'src/navigation/navigation_node.py'
+- Implement path planning using Nav2.
+- Example: 'src/navigation/navigation_node.py'
 
 
-3. **Obstacle Avoidance:**
+1. **Obstacle Avoidance:**
 
 - Create a ROS2 package for obstacle avoidance:
 ```bash
@@ -94,11 +94,11 @@ catkin_create_pkg obstacle_avoidance rospy std_msgs sensor_msgs geometry_msgs
 mkdir -p obstacle_avoidance/src
 ```
 
-Implement obstacle avoidance using sensor data:
-Example: 'src/obstacle_avoidance/obstacle_avoidance_node.py'
+- Implement obstacle avoidance using sensor data:
+- Example: 'src/obstacle_avoidance/obstacle_avoidance_node.py'
 
 4. **Launch Files:**
 
-Create launch files for each component in the launch directory.
-Example: 'launch/navigation_launch.py'
+- Create launch files for each component in the launch directory.
+- Example: 'launch/navigation_launch.py'
 
